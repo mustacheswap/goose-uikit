@@ -1873,9 +1873,12 @@ var Icon$P = function (props) {
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
+    _a.isDark; __rest(_a, ["isDark"]);
+    return (React.createElement("h1", { style: {
+            fontFamily: "mustache",
+            textTransform: "uppercase",
+            fontSize: "14pt",
+        } }, "Mustacheswap"));
 };
 
 var Icon$Q = function (props) {
@@ -2090,7 +2093,7 @@ var Logo$1 = function (_a) {
         React.createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Mustacheswap home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Mustacheswap home page" }, innerLogo))));
 };
 var templateObject_1$y;
 
@@ -2106,11 +2109,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "https://exchange.mustacheswap.com",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "https://exchange.mustacheswap.com/#/pool",
             },
         ],
     },
@@ -2195,7 +2198,7 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/mustacheswap/",
             },
             {
                 label: "Docs",
@@ -2203,7 +2206,7 @@ var links = [
             },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://mustacheswap.medium.com/",
             },
         ],
     },
@@ -2221,62 +2224,62 @@ var socials = [
             //   label: "Bahasa Indonesia",
             //   href: "https://t.me/PancakeSwapIndonesia",
             // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
+            // {
+            //    label: "中文",
+            //    href: "https://t.me/goosefinancechinese",
+            // },
             // {
             //   label: "Tiếng Việt",
             //   href: "https://t.me/PancakeSwapVN",
             // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
+            // {
+            //    label: "Italiano",
+            //    href: "https://t.me/goosefinanceitalian",
+            // },
+            // {
+            //    label: "русский",
+            //    href: "https://t.me/goosefinancerussian",
+            // },
+            // {
+            //    label: "Türkiye",
+            //    href: "https://t.me/GooseFinanceTurkey",
+            // },
             // {
             //   label: "Português",
             //   href: "https://t.me/PancakeSwapPortuguese",
             // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
+            // {
+            //    label: "Español",
+            //    href: "https://t.me/goosefinancespanish",
+            //},
+            //{
+            //    label: "日本語",
+            //    href: "https://t.me/goosefinancejapanese",
+            //},
+            //{
+            //    label: "Français",
+            //    href: "https://t.me/goosefinancefrench",
+            //},
             {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
+                href: "https://t.me/mustacheswap",
             },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
+           // {
+            //    label: "Price Bot",
+             //   href: "https://t.me/BinanceRocketEGG",
+            //},
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
+        href: "https://twitter.com/mustacheswap",
     },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
-    },
+    // {
+    //    label: "Reddit",
+    //    icon: "RedditIcon",
+    //    href: "https://www.reddit.com/r/Mustacheswapofficial",
+    // },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
@@ -2699,7 +2702,7 @@ var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTem
     return theme.nav.background;
 });
 var BodyWrapper = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
+var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n background: url(/mustache-tile.png);\n ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  background: url(/mustache-tile.png);\n ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
