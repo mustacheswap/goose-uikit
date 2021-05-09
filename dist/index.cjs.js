@@ -1886,10 +1886,13 @@ var Icon$P = function (props) {
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 205 26" }, props),
-        React__default['default'].createElement("image", { width: "205", height: "26", href: isDark ? '/images/egg/LogoTextNewDark.png' : '/images/egg/LogoTextNewWhite.png' })));
-};
+       _a.isDark; __rest(_a, ["isDark"]);
+    return (React__default['default'].createElement("h1", { style: {
+            fontFamily: "mustache",
+            textTransform: "uppercase",
+            fontSize: "14pt",
+        } }, "Mustacheswap"));
+};    
 
 var Icon$Q = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -2103,7 +2106,7 @@ var Logo$1 = function (_a) {
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
+        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Mustacheswap home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Mustacheswap home page" }, innerLogo))));
 };
 var templateObject_1$y;
 
@@ -2119,11 +2122,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "https://exchange.mustacheswap.com",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "https://exchange.mustacheswap.com/#/pool",
             },
         ],
     },
@@ -2202,21 +2205,21 @@ var links = [
         label: "More",
         icon: "MoreIcon",
         items: [
-            // {
+              // {
             //   label: "Voting",
-            //   href: "https://voting.pancakeswap.finance",
+            //   href: "https://voting.pancakeswap.com",
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "https://github.com/mustacheswap/",
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://mustacheswap.gitbook.io/mustacheswap/",
             },
             {
                 label: "Blog",
-                href: "https://goosefinance.medium.com/",
+                href: "https://mustacheswap.medium.com/",
             },
         ],
     },
@@ -2228,68 +2231,68 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/goosedefi",
+                href: "https://t.me/mustacheswap",
             },
             // {
             //   label: "Bahasa Indonesia",
             //   href: "https://t.me/PancakeSwapIndonesia",
             // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
+            // {
+            //   label: "中文",
+            //   href: "https://t.me/PancakeSwap_CN",
+            // },
             // {
             //   label: "Tiếng Việt",
             //   href: "https://t.me/PancakeSwapVN",
             // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
+            // {
+            //   label: "Italiano",
+            //   href: "https://t.me/pancakeswap_ita",
+            // },
+            // {
+            //   label: "русский",
+            //   href: "https://t.me/pancakeswap_ru",
+            // },
+            // {
+            //   label: "Türkiye",
+            //   href: "https://t.me/pancakeswapturkiye",
+            // },
             // {
             //   label: "Português",
             //   href: "https://t.me/PancakeSwapPortuguese",
             // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
+            // {
+            //   label: "Español",
+            //   href: "https://t.me/PancakeswapEs",
+            // },
+            // {
+            //   label: "日本語",
+            //   href: "https://t.me/pancakeswapjp",
+            // },
+            // {
+            //   label: "Français",
+            //   href: "https://t.me/pancakeswapfr",
+            // },
             {
                 label: "Announcements",
-                href: "https://t.me/goosefinanceann",
+                href: "https://t.me/Mustacheswap",
             },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
+            // {
+            //    label: "Price Bot",
+            //    href: "https://t.me/BinanceRocketEGG",
+            // },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
+        href: "https://twitter.com/mustacheswap",
     },
-    {
-        label: "Reddit",
-        icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
-    },
+    // {
+    //    label: "Reddit",
+    //    icon: "RedditIcon",
+    //   href: "https://www.reddit.com/r/GooseFinanceofficial",
+    // },
 ];
 var MENU_HEIGHT = 64;
 var MENU_ENTRY_HEIGHT = 48;
@@ -2712,7 +2715,7 @@ var StyledNav = styled__default['default'].nav(templateObject_2$f || (templateOb
     return theme.nav.background;
 });
 var BodyWrapper = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
+var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n background: url(/mustache-tile.png);\n ", " {\n    margin-left: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n background: url(/mustache-tile.png);\n ", " {\n    margin-left: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
