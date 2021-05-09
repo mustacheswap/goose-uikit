@@ -2202,7 +2202,7 @@ var links = [
             },
             {
                 label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
+                href: "https://mustacheswap.gitbook.io/mustacheswap/",
             },
             {
                 label: "Blog",
