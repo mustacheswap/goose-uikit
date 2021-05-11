@@ -10,10 +10,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
-
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted.
-
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
 REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
 AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
@@ -2089,7 +2087,6 @@ var Logo$1 = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
-        React.createElement(Icon$q, { className: "mobile-icon" }),
         React.createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
@@ -2429,7 +2426,7 @@ var PanelFooter = function (_a) {
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
-var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n position: fixed;\n padding-top: ", ";\n top: 0;\n left: 0;\n display: flex;\n flex-direction: column;\n justify-content: space-between;\n flex-shrink: 0;\n background-color: ", ";\n width: ", ";\n height: 100vh;\n transition: padding-top 0.2s, width 0.2s;\n border-right: ", ";\n z-index: 11;\n overflow: ", ";\n background: url(/taco-tile.png);\n transform: translate3d(0, 0, 0);\n\n ", " {\n border-right: 2px solid rgba(133, 133, 133, 0.1);\n width: ", ";\n }\n"], ["\n position: fixed;\n padding-top: ", ";\n top: 0;\n left: 0;\n display: flex;\n flex-direction: column;\n justify-content: space-between;\n flex-shrink: 0;\n background-color: ", ";\n width: ", ";\n height: 100vh;\n transition: padding-top 0.2s, width 0.2s;\n border-right: ", ";\n z-index: 11;\n overflow: ", ";\n background: url(/taco-tile.png);\n transform: translate3d(0, 0, 0);\n\n ", " {\n border-right: 2px solid rgba(133, 133, 133, 0.1);\n width: ", ";\n }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "80px" : 0);
 }, function (_a) {
