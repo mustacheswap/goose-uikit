@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+mport React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
