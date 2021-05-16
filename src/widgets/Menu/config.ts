@@ -32,11 +32,13 @@ export const links = [
     label: "Lottery",
     icon: "TicketIcon",
     href: "/lottery",
+    disabled: true,
   },
   {
     label: "NFT",
     icon: "NftIcon",
     href: "/nft",
+    disabled: true, 
   },
   {
     label: "Profile & Teams",
