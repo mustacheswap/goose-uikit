@@ -1,69 +1,97 @@
-import styled, { keyframes, DefaultTheme } from "styled-components";
-import { MENU_ENTRY_HEIGHT } from "./config";
+import { MenuEntry } from '@pancakeswap-libs/uikit'
 
-export interface Props {
-  secondary?: boolean;
-  isActive?: boolean;
-  theme: DefaultTheme;
-}
+const config: MenuEntry[] = [
+  {
+    label: 'Home',
+    icon: 'HomeIcon',
+    href: '/',
+  },
+  {
+    label: 'Trade',
+    icon: 'TradeIcon',
+    items: [
+      {
+        label: 'Exchange',
+        href: 'https://exchange.mustacheswap.com/#/swap?outputCurrency=0x0000000000000000000000000000000000000000', // fil in
+      },
+      {
+        label: 'Liquidity',
+        href:
+          'https://exchange.mustacheswap.com/#/add/0x0000000000000000000000000000000000000000/0x0000000000000000000000000000000000000000', // fill in 
+      },
+    ],
+  },
+  {
+    label: 'Club',
+    icon: 'FarmIcon',
+    href: '/farms',
+  },
+  {
+    label: 'Barber',
+    icon: 'PoolIcon',
+    href: '/Barber',
+  },
+  {
+    label: 'Lottery (Soon)',
+    icon: 'TicketIcon',
+    href: '/lottery',
+    disabled: true
+  },
+  {
+    label: 'CryptoGents (Soon)',
+    icon: 'NftIcon',
+    href: '/nft',
+    disabled: true
+  },
+  {
+    label: 'Info',
+    icon: 'InfoIcon',
+    items: [
+      {
+        label: 'PancakeSwap',
+        href: 'https://pancakeswap.info/token/0x9066e87Bac891409D690cfEfA41379b34af06391',
+      },
+      // {
+      //   label: 'CoinGecko',
+      //   href: 'https://www.coingecko.com/en/coins/mustacheswap',
+      // },
+      // {
+      //   label: 'CoinMarketCap',
+      //   href: 'https://coinmarketcap.com/currencies/mustacheswap/',
+      // },
+      // {
+      //   label: 'AstroTools',
+      //   href: 'https://app.astrotools.io/pancake-pair-explorer/0x0000000000000000000000000000000000000000', // mustache-busd
+      // },
+    ],
+  },
+  {
+    label: 'More',
+    icon: 'MoreIcon',
+    items: [
+      // {
+      //   label: 'Hacken Audit',
+      //   href: 'https://mustacheswap.com/files/x.pdf',
+      // },
+      {
+        label: 'Github',
+        href: 'https://github.com/mustacheswap/',
+      },
+      {
+        label: 'Docs',
+        href: 'https://mustacheswap.gitbook.io/mustacheswap/',
+      },
+      {
+        label: 'Blog',
+        href: 'https://mustacheswap.medium.com/',
+      },
+    ],
+  },
+  // {
+  //   label: 'Hacken Audit',
+  //   icon: 'AuditIcon',
+  //   href: 'https://mustacheswap.com/files/XX.pdf',
+  // },
+]
 
-const rainbowAnimation = keyframes`
-  0%,
-  100% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
-`;
-
-const LinkLabel = styled.div<{ isPushed: boolean }>`
-  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
-  transition: color 0.4s;
-  flex-grow: 1;
-`;
-
-const MenuEntry = styled.div<Props>`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
-  font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.textSubtle};
-  box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
-
-  a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  svg {
-    fill: ${({ theme }) => theme.colors.textSubtle};
-  }
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.tertiary};
-  }
-
-  // Safari fix
-  flex-shrink: 0;
-
-  &.rainbow {
-    -webkit-background-clip: text;
-    animation: ${rainbowAnimation} 3s ease-in-out infinite;
-    background: ${({ theme }) => theme.colors.gradients.bubblegum};
-    background-size: 200% 100%;
-    font-weight: bold;
-  }
-`;
-MenuEntry.defaultProps = {
-  secondary: false,
-  isActive: false,
-  role: "button",
-};
-
-export { MenuEntry, LinkLabel };
+export default config
