@@ -2250,13 +2250,13 @@ var socials = [
             //    label: "Français",
             //    href: "https://t.me/mustacheswapfrench",
             //},
-            {
-                label: "Announcements",
-                href: "https://t.me/mustacheswap",
-            },
-           // {
+            //{
+            //    label: "Announcements",
+            //    href: "https://t.me/mustacheswap",
+            //},
+            //{
             //    label: "Price Bot",
-             //   href: "https://t.me/BinanceRocketEGG",
+            //    href: "https://t.me/BinanceRocketEGG",
             //},
         ],
     },
