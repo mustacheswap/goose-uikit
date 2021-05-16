@@ -2208,47 +2208,47 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/goosedefi",
+                href: "https://t.me/mustacheswap",
             },
             // {
             //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
+            //   href: "https://t.me/MustacheswapIndonesia",
             // },
             // {
             //    label: "中文",
-            //    href: "https://t.me/goosefinancechinese",
+            //    href: "https://t.me/mustacheswapchinese",
             // },
             // {
             //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
+            //   href: "https://t.me/mustacheswapVN",
             // },
             // {
             //    label: "Italiano",
-            //    href: "https://t.me/goosefinanceitalian",
+            //    href: "https://t.me/mustacheswapitalian",
             // },
             // {
             //    label: "русский",
-            //    href: "https://t.me/goosefinancerussian",
+            //    href: "https://t.me/mustacheswaprussian",
             // },
             // {
             //    label: "Türkiye",
-            //    href: "https://t.me/GooseFinanceTurkey",
+            //    href: "https://t.me/mustacheswapTurkey",
             // },
             // {
             //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
+            //   href: "https://t.me/mustacheswapPortuguese",
             // },
             // {
             //    label: "Español",
-            //    href: "https://t.me/goosefinancespanish",
+            //    href: "https://t.me/mustacheswapspanish",
             //},
             //{
             //    label: "日本語",
-            //    href: "https://t.me/goosefinancejapanese",
+            //    href: "https://t.me/mustacheswapjapanese",
             //},
             //{
             //    label: "Français",
-            //    href: "https://t.me/goosefinancefrench",
+            //    href: "https://t.me/mustacheswapfrench",
             //},
             {
                 label: "Announcements",
