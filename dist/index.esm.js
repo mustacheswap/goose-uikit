@@ -2099,11 +2099,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.mustacheswap.com",
+                href: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.mustacheswap.com/#/pool",
+                href: "https://exchange.pancakeswap.finance/#/add/0x8D4Fe1B9cAd29A81B15984E5249498219d82d4C9/0xe9e7cea3dedca5984780bafc599bd69add087d56",
             },
         ],
     },
